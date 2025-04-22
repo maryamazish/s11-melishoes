@@ -1,0 +1,137 @@
+:root{
+  --colr-div: blue;
+  --color-container-md: brown;
+  --color-container-ms: pink;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+  margin: 0;
+  height: 200vh;
+
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 200vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-container-md);
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.Hi {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: blue;
+}
+
+.Content {
+  height: 120vh;
+  background-color: chartreuse;
+  padding: 50px;
+
+}
+
+.Maryam {
+  position: sticky;
+  /* top: 50px; */
+  bottom: 100px;
+  background-color: blueviolet;
+
+}
+
+
+
+
+
+
+.transition {
+  width: 200px;
+  height: 200px;
+  background-color: var(--colr-div);
+  transition: all 2s;
+}
+
+.transition:hover {
+  background-color: red;
+}
+
+.animation {
+  width: 200px;
+  height: 200px;
+  background-color: --colr-div;
+  animation-name: cop;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1500ms;
+}
+
+.animation1 {
+  width: 200px;
+  height: 200px;
+  background-color: --colr-div;
+  animation-name: cop;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.animation2 {
+  margin-top: 100px;
+  width: 200px;
+  height: 200px;
+  background-color: --colr-div;
+  animation-name: foo,border;
+  animation-duration: 1000ms , 1000ms;
+  animation-iteration-count: infinite;
+}
+
+@media (width< 500px) {
+  .container{
+    background-color: var(--color-container-ms);
+  }
+}
+
+
+@keyframes cop {
+  from {
+    background-color: chocolate;
+  }
+
+  to {
+    background-color: yellow;
+  }
+}
+
+@keyframes border {
+  from {
+    border-radius: 0;
+  }
+
+  to {
+    border-radius: 50%;
+  }
+}
+
+@keyframes foo {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
