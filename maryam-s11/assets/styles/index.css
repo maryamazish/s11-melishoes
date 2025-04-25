@@ -290,7 +290,9 @@ a {
   }
 
   #hero .shoes {
-    box-shadow: inset 15px 30px 60px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: inset 15px 30px 60px 0 rgba(0, 0, 0, 0.2); */
+    filter: drop-shadow(15px 30px 60px rgba(0, 0, 0, 0.2));
+}
   }
 
   #hero .content {
@@ -362,7 +364,7 @@ a {
     margin-bottom: 25px;
   }
 
-  
+
 
   #products .mod-proucts{
     display: none;
