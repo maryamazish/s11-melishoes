@@ -59,9 +59,10 @@ img {
   }
 
   #hero,
-  #countries {
+  #countries,
+  #products {
     margin: 40px 24px 0;
-    border: 1px solid rgb(255, 0, 149);
+    /* border: 1px solid rgb(255, 0, 149); */
   }
 
   #hero .customers {
@@ -98,7 +99,7 @@ img {
     font-weight: 400;
     font-size: 48px;
     line-height: 48px;
-    background-color: rgb(81, 20, 194);
+    /* background-color: rgb(81, 20, 194); */
   }
 
   #hero p {
@@ -109,27 +110,30 @@ img {
     font-size: 14px;
     line-height: 100%;
     color: rgba(27, 23, 23, 0.65);
-    background-color: rgb(20, 194, 49);
+    /* background-color: rgb(20, 194, 49); */
   }
 
   #hero .contact {
-    flex-direction: column;
+    /* flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(231, 8, 45);
+    align-items: center; */
+    text-align: center
+    /* background-color: rgb(231, 8, 45); */
   }
 
-  .contact-us,
-  .online-order {
+  a {
     font-family: "Vazirmatn";
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
-  }
-
-  #hero .contact-us {
     border-radius: 35px;
     padding: 8px 32px;
+    text-decoration: none;
+  }
+
+
+  #hero .contact-us {
+    display: inline-block;
     margin-top: 10px;
     color: rgba(27, 23, 23, 0.65);
     border: 1px rgba(27, 23, 23, 0.65) solid;
@@ -145,8 +149,6 @@ img {
   #hero .online-order {
     display: inline-flex;
     gap: 10px;
-    border-radius: 35px;
-    padding: 8px 32px;
     margin-top: 10px;
     color: rgba(238, 235, 221, 1);
     border: 1px rgba(206, 18, 18, 1) solid;
@@ -168,55 +170,126 @@ img {
     margin-top: 60px;
   }
 
+  #countries p {
+    font-family: "Vazirmatn";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: rgba(27, 23, 23, 1);
+  }
 
-  .row1 {
-    display: flex;
+  #countries ul {
     list-style: none;
     padding: 0;
   }
 
-  .col {
+  #countries ul li {
     padding: 6px;
     width: 25%;
   }
 
-  .item {
+  #countries ul li .item {
     text-align: center;
     width: 100%;
-    transition: all;
     /* background-color: rgb(236, 132, 172); */
-
   }
 
-  .item img {
+  #countries ul li .item img {
     width: 100%;
     height: auto;
   }
 
-  .item .foo {
-    display: block;
-  }
-  
-  .item .item-img:hover .foo{
-    display: none;
-  }
-
-  .item .bar {
-    display: none;
-  }
-
-
-  .item .item-img:hover .bar{
+  #countries ul li .item .outline {
     display: block;
   }
 
-  .item p {
+  #countries ul li .item-img:hover .outline {
+    display: none;
+  }
+
+  #countries ul li .item .color {
+    display: none;
+  }
+
+
+  #countries ul li .item-img:hover .color {
+    display: block;
+  }
+
+  #countries ul li .item p {
     padding: 10px 0;
     font-family: "Vazirmatn";
     font-weight: 500;
     font-size: 14px;
     line-height: 100%;
     color: rgba(27, 23, 23, 0.65);
+  }
+
+  #products {
+    margin-top: 60px;
+  }
+
+  #products h2 {
+    font-family: "Lalezar";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: rgba(27, 23, 23, 1);
+  }
+
+  #products p {
+    font-family: "Vazirmatn";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(27, 23, 23, 0.65);
+  }
+
+  #products ul {
+    list-style: none;
+    padding: 0;
+    margin: 35px 0;
+  }
+
+  #products ul li {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  #products ul li .item {
+    text-align: center;
+    width: 100%;
+  }
+
+  #products ul li .item img {
+    width: 100%;
+    height: auto;
+  }
+
+  #products ul li .item .title {
+    margin-top: 15px;
+    font-family: "Vazirmatn";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: rgba(27, 23, 23, 1);
+  }
+
+  #products ul li .item .dessc {
+    font-family: "Vazirmatn";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(27, 23, 23, 0.65);
+  }
+
+  #products .show-all {
+    margin: 10px auto 0 auto;
+    display: block;
+    width: fit-content;
+    color: rgba(27, 23, 23, 0.65);
+    border: 1px rgba(27, 23, 23, 0.65) solid;
+    background-color: rgba(238, 235, 221, 1);
   }
 
 
