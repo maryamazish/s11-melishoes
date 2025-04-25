@@ -58,7 +58,8 @@ img {
     margin: 30px auto;
   }
 
-  #hero, #countries {
+  #hero,
+  #countries {
     margin: 40px 24px 0;
     border: 1px solid rgb(255, 0, 149);
   }
@@ -163,17 +164,60 @@ img {
     filter: brightness(0) saturate(100%) invert(87%) sepia(8%) saturate(274%) hue-rotate(352deg) brightness(95%) contrast(90%);
   }
 
-  #countries ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    background-color: aqua;
-    justify-content: center;
+  #countries {
+    margin-top: 60px;
   }
 
-  #countries ul img{
-    width: 25%;
-    background-color: blue;
+
+  .row1 {
+    display: flex;
+    list-style: none;
+    padding: 0;
   }
+
+  .col {
+    padding: 6px;
+    width: 25%;
+  }
+
+  .item {
+    text-align: center;
+    width: 100%;
+    transition: all;
+    /* background-color: rgb(236, 132, 172); */
+
+  }
+
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .item .foo {
+    display: block;
+  }
+  
+  .item .item-img:hover .foo{
+    display: none;
+  }
+
+  .item .bar {
+    display: none;
+  }
+
+
+  .item .item-img:hover .bar{
+    display: block;
+  }
+
+  .item p {
+    padding: 10px 0;
+    font-family: "Vazirmatn";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(27, 23, 23, 0.65);
+  }
+
+
 }
