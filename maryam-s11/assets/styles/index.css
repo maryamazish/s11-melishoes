@@ -87,7 +87,7 @@ header .mob-img {
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  color: rgba(27, 23, 23, 0.65);
+  color: var(--BColor);
 }
 
 /* توجه به علامت فیل */
@@ -100,6 +100,8 @@ header .mob-img {
   line-height: 64px;
 }
 
+
+
 #hero p {
   padding: 0;
   margin: 10px 0 0;
@@ -107,7 +109,7 @@ header .mob-img {
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  color: rgba(27, 23, 23, 0.65);
+  color: var(--BColor);
 }
 
 /* دکمه های قسمت هیرو */
@@ -125,31 +127,41 @@ a {
 #hero .contact-us {
   display: inline-block;
   margin-top: 10px;
-  color: rgba(27, 23, 23, 0.65);
-  border: 1px rgba(27, 23, 23, 0.65) solid;
-  background-color: rgba(238, 235, 221, 1);
+  color: var(--BColor);
+  border: 1px var(--BColor) solid;
+  background-color: var(--WColor);
 
 }
 
+
 #hero .contact-us:hover {
-  color: rgba(27, 23, 23, 1);
-  border: 1px rgba(27, 23, 23, 1) solid;
-  background-color: rgba(238, 235, 221, 1);
+  color: var(--BColor1);
+  border: 1px var(--BColor1) solid;
+  background-color: var(--WColor);
+}
+
+:root {
+  --BColor: rgba(27, 23, 23, 0.65);
+  --WColor: rgba(238, 235, 221, 1);
+  --BColor1: rgba(27, 23, 23, 1);
+
+  --RColor: rgba(206, 18, 18, 1);
+  --RColor1: rgba(129, 0, 0, 1);
 }
 
 #hero .online-order {
   display: inline-flex;
   gap: 10px;
   margin-top: 10px;
-  color: rgba(238, 235, 221, 1);
-  border: 1px rgba(206, 18, 18, 1) solid;
-  background-color: rgba(206, 18, 18, 1);
+  color: var(--WColor);
+  border: 1px var(--RColor) solid;
+  background-color: var(--RColor);
 }
 
 #hero .online-order:hover {
-  color: rgba(238, 235, 221, 1);
-  border: 1px rgba(129, 0, 0, 1) solid;
-  background-color: rgba(129, 0, 0, 1);
+  color: var(--WColor);
+  border: 1px var(--RColor1) solid;
+  background-color: var(--RColor1);
 }
 
 #hero .online-order img {
@@ -163,7 +175,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
-  color: rgba(27, 23, 23, 1);
+  color: var(--BColor1);
 }
 
 #countries ul {
@@ -215,14 +227,14 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 100%;
-  color: rgba(27, 23, 23, 0.65);
+  color: var(--BColor);
 }
 
 #products h2 {
   font-family: "Lalezar";
   font-weight: 400;
   line-height: 100%;
-  color: rgba(27, 23, 23, 1);
+  color: var(--BColor1);
 }
 
 #products span {
@@ -230,7 +242,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  color: rgba(27, 23, 23, 0.65);
+  color: var(--BColor);
 }
 
 
@@ -259,7 +271,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
-  color: rgba(27, 23, 23, 1);
+  color: var(--BColor1);
 }
 
 #products ul li .item .dessc {
@@ -267,16 +279,16 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 100%;
-  color: rgba(27, 23, 23, 0.65);
+  color: var(--BColor);
 }
 
 #products .show-all {
   margin: 10px auto 0 auto;
   display: block;
   width: fit-content;
-  color: rgba(27, 23, 23, 0.65);
-  border: 1px rgba(27, 23, 23, 0.65) solid;
-  background-color: rgba(238, 235, 221, 1);
+  color: var(--BColor);
+  border: 1px var(--BColor) solid;
+  background-color: var(--WColor);
 }
 
 
@@ -292,83 +304,83 @@ a {
   #hero .shoes {
     /* box-shadow: inset 15px 30px 60px 0 rgba(0, 0, 0, 0.2); */
     filter: drop-shadow(15px 30px 60px rgba(0, 0, 0, 0.2));
+  }
 }
-  }
 
-  #hero .content {
-    flex-grow: 1;
-  }
+#hero .content {
+  flex-grow: 1;
+}
 
-  #hero p {
-    width: 85%;
-  }
-
-
-  #hero .contact {
-    display: flex;
-    gap: 10px;
-  }
-
-  #hero .contact-us {
-    order: 2;
-  }
-
-  #hero .online-order {
-    order: 1;
-  }
-
-  #countries {
-    margin: 120px auto 0 auto;
-    text-align: center;
-    width: 50%;
-  }
-
-  #countries ul li .item-img {
-    position: relative;
-    padding: 0 10px;
-  }
-
-  #countries .item-img:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 1px;
-    margin-left: -10px;
-    background-color: rgba(27, 23, 23, 0.1);
-  }
+#hero p {
+  width: 85%;
+}
 
 
-  #products {
-    margin-top: 120px;
-  }
+#hero .contact {
+  display: flex;
+  gap: 10px;
+}
 
-  #products h2 {
-    font-size: 48px;
-  }
+#hero .contact-us {
+  order: 2;
+}
 
-  #products span{
-    display: block;
-    margin-top: 10px;
-  }
+#hero .online-order {
+  order: 1;
+}
 
-  #products ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-  }
+#countries {
+  margin: 120px auto 0 auto;
+  text-align: center;
+  width: 50%;
+}
 
-  #products ul li {
-    width: 25%;
-    margin-bottom: 25px;
-  }
+#countries ul li .item-img {
+  position: relative;
+  padding: 0 10px;
+}
+
+#countries .item-img:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  margin-left: -10px;
+  background-color: rgba(27, 23, 23, 0.1);
+}
+
+
+#products {
+  margin-top: 120px;
+}
+
+#products h2 {
+  font-size: 48px;
+}
+
+#products span {
+  display: block;
+  margin-top: 10px;
+}
+
+#products ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+#products ul li {
+  width: 25%;
+  margin-bottom: 25px;
+}
 
 
 
-  #products .mod-proucts{
-    display: none;
-  }
+#products .mod-proucts {
+  display: none;
+}
 }
 
 /* موبایل */
@@ -437,11 +449,11 @@ a {
     margin-bottom: 25px;
   }
 
-  #products .products-hidden{
+  #products .products-hidden {
     display: none;
   }
 
-  #products .dsc-proucts{
+  #products .dsc-proucts {
     display: none;
   }
 }
