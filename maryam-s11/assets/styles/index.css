@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+
+:root {
+  --BColor: rgba(27, 23, 23, 0.65);
+  --WColor: rgba(238, 235, 221, 1);
+  --BColor1: rgba(27, 23, 23, 1);
+
+  --RColor: rgba(206, 18, 18, 1);
+  --RColor1: rgba(129, 0, 0, 1);
+}
+
 body {
   font-family: "Vazirmatn", "Lalezar";
   margin: 0;
@@ -138,15 +148,6 @@ a {
   color: var(--BColor1);
   border: 1px var(--BColor1) solid;
   background-color: var(--WColor);
-}
-
-:root {
-  --BColor: rgba(27, 23, 23, 0.65);
-  --WColor: rgba(238, 235, 221, 1);
-  --BColor1: rgba(27, 23, 23, 1);
-
-  --RColor: rgba(206, 18, 18, 1);
-  --RColor1: rgba(129, 0, 0, 1);
 }
 
 #hero .online-order {
